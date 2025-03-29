@@ -70,93 +70,93 @@ async function greet() {
  greet();
 
 
-// placeorder(cart)
-//  .then(order=>preparingOrder(order))
-//  .then(foodDetails=>pickuporder(foodDetails))
-//  .then(droplocation=>deliverorder(droplocation))
-//  .catch(error=>console.log(error));  
+placeorder(cart)
+ .then(order=>preparingOrder(order))
+ .then(foodDetails=>pickuporder(foodDetails))
+ .then(droplocation=>deliverorder(droplocation))
+ .catch(error=>console.log(error));  
 
 
 
 
-// // ***************
+// ***************
 
 
-// function test1(){
-//     const p1 = new Promise((resolve,reject)=>{
-//         setTimeout(()=>{
-//         resolve("first promise resolve");
-//         },3000)
-//     })
-//     return p1;
-// }
+function test1(){
+    const p1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+        resolve("first promise resolve");
+        },3000)
+    })
+    return p1;
+}
 
-// function test2(){
-//     const p2 = new Promise((resolve,reject)=>{
-//         setTimeout(()=>{
-//             resolve("second promise resolve");
-//         },3000)
-//     })
-//     return p2;    
-// }
-
-
-// async function greet() {
-//     const data1 = await test1();
-//     console.log(data1);
-
-//     const data2 = await test2();
-//     console.log(data2);
-// }
-// greet();
-
-// // setTimeout(()=>{  
-//     async function meet() {
-//     return "Hello Coder";
-// }
-// meet().then(value=>console.log(value));
-//  //  },4000)
+function test2(){
+    const p2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("second promise resolve");
+        },3000)
+    })
+    return p2;    
+}
 
 
+async function greet() {
+    const data1 = await test1();
+    console.log(data1);
+
+    const data2 = await test2();
+    console.log(data2);
+}
+greet();
+
+// setTimeout(()=>{  
+    async function meet() {
+    return "Hello Coder";
+}
+meet().then(value=>console.log(value));
+ //  },4000)
 
 
-// const p1 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         resolve("first promise resolve");
-//     },3000)
+
+
+const p1 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("first promise resolve");
+    },3000)
     
-// })
+})
 
-// const p2 = new Promise((resolve,reject)=>{
-//     setTimeout(()=>{
-//         resolve("second promise resolve");
-//     },2000)
+const p2 = new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("second promise resolve");
+    },2000)
     
-// })
+})
 
 
-// p1.then(value=>console.log(value));
-// // jiska kam time hoga pahle ho print hoga
-// p2.then(value=>console.log(value));
+p1.then(value=>console.log(value));
+// jiska kam time hoga pahle ho print hoga
+p2.then(value=>console.log(value));
 
 
-// console.log(p1);          // direct iska use nhi karenge
-// p1.then((response)=>console.log(response));
+console.log(p1);          // direct iska use nhi karenge
+p1.then((response)=>console.log(response));
 
-// async function greet() {
-//     const data = await p1;
-//     console.log(data);
-// }
-// greet();
+async function greet() {
+    const data = await p1;
+    console.log(data);
+}
+greet();
 
 
 
-// async function greet() {
-//     const data1 = await p1;
-//   //  console.log("hello coder army");
-//     console.log(data1);
-//   // dono data ek sath milenge
-//     const data2 = await p2;
-//     console.log(data2);
-// }
-// greet();
+async function greet() {
+    const data1 = await p1;
+  //  console.log("hello coder army");
+    console.log(data1);
+  // dono data ek sath milenge
+    const data2 = await p2;
+    console.log(data2);
+}
+greet();
